@@ -44,7 +44,7 @@ class Roo():
 			result = self.checkComment(comment)
 			if result:
 				return result
-			else:
+			else: #TODO store all valid posts and return the best one rather than the first valid post
 				self.notRightComment = True
 				if comment:
 					result = self.checkParent(comment)
